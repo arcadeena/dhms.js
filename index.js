@@ -44,8 +44,8 @@ module.exports = class DHMS {
 
     static burn(timeString) {
         return (
-            parseFloat(timeString.match(/[0-9]+(?:(?= ?y)|(?= ?years?))/g) || 0) * 1000 * 60 * 60 * 24 * (360 / 12) * 12 +
-            parseFloat(timeString.match(/[0-9]+(?:(?= ?M)|(?= ?months?))/g) || 0) * 1000 * 60 * 60 * 24 * (360 / 12) +
+            parseFloat(timeString.match(/[0-9]+(?:(?= ?y)|(?= ?years?))/g) || 0) * 1000 * 60 * 60 * 24 * (365 / 12) * 12 +
+            parseFloat(timeString.match(/[0-9]+(?:(?= ?M)|(?= ?months?))/g) || 0) * 1000 * 60 * 60 * 24 * (365 / 12) +
             parseFloat(timeString.match(/[0-9]+(?:(?= ?d)|(?= ?days?))/g) || 0) * 1000 * 60 * 60 * 24 +
             parseFloat(timeString.match(/[0-9]+(?:(?= ?h)|(?= ?hours?))/g) || 0) * 1000 * 60 * 60 +
             parseFloat(timeString.match(/[0-9]+(?:(?= ?m)|(?= ?minutes?))/g) || 0) * 1000 * 60 +
