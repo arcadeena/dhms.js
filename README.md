@@ -5,7 +5,7 @@ A small node library to format durations
 #### Installation
 
 ```bash
-npm install git://github.com/arcadeena/dhms.js.git
+npm install git://github.com/arcadeena/dhms.js
 ```
 
 #### Examples
