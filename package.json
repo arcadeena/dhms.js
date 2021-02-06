@@ -10,10 +10,6 @@
         "type": "git",
         "url": "git+https://github.com/arcadeena/dhms.js.git"
     },
-    "keywords": [
-        "dhms",
-        "duration"
-    ],
     "author": "Arcadeena",
     "license": "MIT",
     "bugs": {
